@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.brexitquizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/primary_light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/question1"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/q1Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_1_number"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/question_number"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/q1Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/question_1_text"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/question_text"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/brexit2"
+                android:scaleType="centerCrop"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/answer1">
+
+                <RadioButton
+                    android:id="@+id/q1a1RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_1_answer_1"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/question_answer" />
+                <RadioButton
+                    android:id="@+id/q1a2RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_1_answer_2"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/question_answer" />
+                <RadioButton
+                    android:id="@+id/q1a3RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_1_answer_3"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/question_answer" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/primary_light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/question2"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/q2Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_2_number"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/question_number"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/q2Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/question_2_text"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/question_text"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/brexit3"
+                android:scaleType="centerCrop"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/answer2">
+
+                <RadioButton
+                    android:id="@+id/q2a1RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_2_answer_1"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/question_answer" />
+                <RadioButton
+                    android:id="@+id/q2a2RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_2_answer_2"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/question_answer" />
+                <RadioButton
+                    android:id="@+id/q2a3RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_2_answer_3"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/question_answer" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/primary_light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/question2"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/q2Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_2_number"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/question_number"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/q2Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/question_2_text"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/question_text"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/brexit3"
+                android:scaleType="centerCrop"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/answer2">
+
+                <RadioButton
+                    android:id="@+id/q2a1RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_2_answer_1"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/question_answer" />
+                <RadioButton
+                    android:id="@+id/q2a2RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_2_answer_2"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/question_answer" />
+                <RadioButton
+                    android:id="@+id/q2a3RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_2_answer_3"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/question_answer" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/divider" />
+    </LinearLayout>
+</ScrollView>
