@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Brexit Quiz App</string>
+    <string name="question_1_number">1</string>
+    <string name="question_1_text">Qué político británico destacado defendió, antes de celebrearse
+        el referéndum, la permanencia de Reino Unido dentro de la unión europea?</string>
+    <string name="question_1_answer_correct">DAVID CAMERON</string>
+    <string name="question_1_intro_text">Introduzca la respuesta</string>
+    <string name="question_2_number">2</string>
+    <string name="question_2_text">¿A qué se dedica Gina Miller, la persona que obligó a Theresa May
+        a pasar por el parlamento para activar la salida de la UE?</string>
+    <string name="question_2_answer_1">Profesora</string>
+    <string name="question_2_answer_2">Banquera</string>
+    <string name="question_2_answer_3">Inversora de la City</string>
+    <string name="question_3_number">3</string>
+    <string name="question_3_text">¿En qué tratado aparece por primera vez la posibilidad de que un
+        estado miembro pueda abandonar la Unión Europea?</string>
+    <string name="question_3_answer_1">Tratado de Niza</string>
+    <string name="question_3_answer_2">Tratado de Lisboa</string>
+    <string name="question_3_answer_3">Tratado de Ámserdam</string>
+    <string name="question_4_number">4</string>
+    <string name="question_4_text">En el último eurobarómetro, ¿cuál fue una de las dos palabras más
+        repetidas por los encuestados cuando se les preguntó por el 60 aniversario de la U.E.?</string>
+    <string name="question_4_answer_1">Satisfacción</string>
+    <string name="question_4_answer_2">Decepción</string>
+    <string name="question_4_answer_3">Nada</string>
+    <string name="question_5_number">5</string>
+    <string name="question_5_text">¿A qué término imita la palabra Brexit?</string>
+    <string name="question_5_answer_1">BRIEXIT</string>
+    <string name="question_5_answer_2">GREXIT</string>
+    <string name="question_5_answer_3">DREXIT</string>
+    <string name="intro_1_text">Brexit Quiz App</string>
+    <string name="intro_2_text">Comprueba cuánto sabes sobre el brexit!!</string>
+    <string name="end_1_text">Resultados</string>
+    <string name="end_2_text">volver a empezar</string>
+    <string name="finish_button_text">comprobar</string>
+    <string name="reset_button_text">reset</string>
+</resources>

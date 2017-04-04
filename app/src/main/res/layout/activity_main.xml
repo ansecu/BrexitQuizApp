@@ -73,7 +73,7 @@
                 android:padding="10dp">
 
                 <TextView
-                    android:id="@+id/q1Number"
+                    android:id="@+id/q1_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_1_number"
@@ -82,7 +82,7 @@
                     android:gravity="center_vertical"/>
 
                 <TextView
-                    android:id="@+id/q1Text"
+                    android:id="@+id/q1_text"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="@string/question_1_text"
@@ -98,35 +98,13 @@
                 android:src="@drawable/b_politicians"
                 android:scaleType="centerCrop"/>
 
-            <RadioGroup
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/question_1_answer"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center_horizontal"
-                android:id="@+id/answer1">
-
-                <RadioButton
-                    android:id="@+id/q1a1RadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/question_1_answer_1"
-                    android:textColor="@color/primary_text"
-                    android:textSize="@dimen/question_answer" />
-                <RadioButton
-                    android:id="@+id/q1a2RadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/question_1_answer_2"
-                    android:textColor="@color/primary_text"
-                    android:textSize="@dimen/question_answer" />
-                <RadioButton
-                    android:id="@+id/q1a3RadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/question_1_answer_3"
-                    android:textColor="@color/primary_text"
-                    android:textSize="@dimen/question_answer" />
-            </RadioGroup>
+                android:hint="@string/question_1_intro_text"
+                android:inputType="textNoSuggestions"
+                android:padding="10dp"/>
 
         </LinearLayout>
 
@@ -456,7 +434,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/finish_button"
-                    android:text="@string/finish_button_text"/>
+                    android:text="@string/finish_button_text"
+                    android:onClick="comprobar"/>
                 <TextView
                     android:id="@+id/end_1_text_view"
                     android:layout_width="match_parent"
@@ -473,16 +452,6 @@
                 android:layout_height="200dp"
                 android:src="@drawable/b_directions"
                 android:scaleType="centerCrop"/>
-
-            <TextView
-                android:id="@+id/end_2_text_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/end_2_text"
-                android:textColor="@color/primary_text"
-                android:textSize="@dimen/question_text"
-                android:gravity="center_vertical"
-                android:paddingLeft="10dp"/>
 
 
         </LinearLayout>
