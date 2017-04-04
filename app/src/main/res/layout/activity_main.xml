@@ -152,35 +152,29 @@
                 android:src="@drawable/b_t_may"
                 android:scaleType="centerCrop"/>
 
-            <RadioGroup
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center_horizontal"
-                android:id="@+id/answer2">
-
-                <RadioButton
-                    android:id="@+id/q2a1RadioButton"
+                android:orientation="vertical">
+                <CheckBox
+                    android:id="@+id/q2_a1_checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_2_answer_1"
-                    android:textColor="@color/primary_text"
-                    android:textSize="@dimen/question_answer" />
-                <RadioButton
-                    android:id="@+id/q2a2RadioButton"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <CheckBox
+                    android:id="@+id/q2_a2_checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_2_answer_2"
-                    android:textColor="@color/primary_text"
-                    android:textSize="@dimen/question_answer" />
-                <RadioButton
-                    android:id="@+id/q2a3RadioButton"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <CheckBox
+                    android:id="@+id/q2_a3_checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_2_answer_3"
-                    android:textColor="@color/primary_text"
-                    android:textSize="@dimen/question_answer" />
-            </RadioGroup>
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -236,21 +230,21 @@
                 android:id="@+id/answer3">
 
                 <RadioButton
-                    android:id="@+id/q3a1RadioButton"
+                    android:id="@+id/q3_a1_RadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_3_answer_1"
                     android:textColor="@color/primary_text"
                     android:textSize="@dimen/question_answer" />
                 <RadioButton
-                    android:id="@+id/q3a2RadioButton"
+                    android:id="@+id/q3_a2_RadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_3_answer_2"
                     android:textColor="@color/primary_text"
                     android:textSize="@dimen/question_answer" />
                 <RadioButton
-                    android:id="@+id/q3a3RadioButton"
+                    android:id="@+id/q3_a3_RadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_3_answer_3"
@@ -312,21 +306,21 @@
                 android:id="@+id/answer4">
 
                 <RadioButton
-                    android:id="@+id/q4a1RadioButton"
+                    android:id="@+id/q4_a1_RadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_4_answer_1"
                     android:textColor="@color/primary_text"
                     android:textSize="@dimen/question_answer" />
                 <RadioButton
-                    android:id="@+id/q4a2RadioButton"
+                    android:id="@+id/q4_a2_RadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_4_answer_2"
                     android:textColor="@color/primary_text"
                     android:textSize="@dimen/question_answer" />
                 <RadioButton
-                    android:id="@+id/q4a3RadioButton"
+                    android:id="@+id/q4_a3_RadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_4_answer_3"
@@ -388,21 +382,21 @@
                 android:id="@+id/answer5">
 
                 <RadioButton
-                    android:id="@+id/q5a1RadioButton"
+                    android:id="@+id/q5_a1_RadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_5_answer_1"
                     android:textColor="@color/primary_text"
                     android:textSize="@dimen/question_answer" />
                 <RadioButton
-                    android:id="@+id/q5a2RadioButton"
+                    android:id="@+id/q5_a2_RadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_5_answer_2"
                     android:textColor="@color/primary_text"
                     android:textSize="@dimen/question_answer" />
                 <RadioButton
-                    android:id="@+id/q5a3RadioButton"
+                    android:id="@+id/q5_a3_RadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_5_answer_3"
