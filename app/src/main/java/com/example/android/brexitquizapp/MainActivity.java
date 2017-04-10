@@ -19,13 +19,24 @@ import static android.R.attr.id;
 public class MainActivity extends AppCompatActivity {
 
 //views variables
+    String q1AnswerCorrect;
+    EditText q1AnswerUserEditText;
+
+    String q3AnswerCorrect;
+    RadioGroup q3RadioGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //casting views
+        //casting views and getting correct answers for question 1
+        q1AnswerUserEditText = (EditText) findViewById(R.id.question_1_answer);
+        q1AnswerCorrect = getString(R.string.question_1_answer_correct);
+        //casting views and getting correct answers for question 2
 
+        //casting views and getting correct answers for question 3
+        q3AnswerCorrect = getString(R.string.question_3_answer_correct);
+        q3RadioGroup = (RadioGroup) findViewById(R.id.answer3);
 
     }
 
@@ -37,29 +48,55 @@ public class MainActivity extends AppCompatActivity {
     int totalNotSelected = 0;
 
     /**
-     * Method for evaluating Question 1.
+     * Method for evaluating EditText questions.
      *
+     *@param answerCorrect is an uppercase string obtained from res/strings;
+     *@param answerUserEditText is a view where the user has entered his response.
      *
      */
-    public void evaluateQuestion1() {
-        //obtains correct answer from strings.xml
-        String answer1correct = getString(R.string.question_1_answer_correct);
-        //casting editText view
-        EditText answer1UserView = (EditText) findViewById(R.id.question_1_answer);
-        //obtains answer on editText
-        //Editable answer1UserEditable = answer1UserView.getText();
-        //convert Editable into string
-        String answer1User = answer1UserView.getText().toString();
+
+    public void evaluateQuestionEditText(String answerCorrect, EditText answerUserEditText) {
+        //converts Editable into string
+        String answerUser = answerUserEditText.getText().toString();
         //convert String into uppercase characters
-        answer1User = answer1User.toUpperCase();
+        answerUser = answerUser.toUpperCase();
         //check results
-        if (answer1User.equals(answer1correct)) {
+        if (answerUser.equals(answerCorrect)) {
             totalCorrect += 1;
 
             //} else  if (answer1User == "") {
             //} else  if (TextUtils.isEmpty(answer1User)) {
-        } else if (answer1User.matches("")) {
+      //} else if (answerUser.matches("")) {
+        } else if (answerUser.isEmpty()) {
             totalNotSelected += 1;
+        } else {
+            totalWrong += 1;
+        }
+    }
+
+    /**
+     * Method for evaluating RadioButton questions.
+     *
+     *@param radioGroup is the answer we are evaluating.
+     *@param correctAnswer is the correct answer obtained from @strings
+     *
+     */
+
+    public void evaluateQuestionRadioButton(RadioGroup radioGroup, String correctAnswer) {
+        //get selected Radio Button Id
+        int selectedId = radioGroup.getCheckedRadioButtonId();
+        //find selected radioButton by returned Id
+        RadioButton radioButtonSelected = (RadioButton) findViewById(selectedId);
+        //get Text from selected RadioButton
+        //String stringAnswerUser = radioButtonSelected.getText().toString();
+        //Evaluate answer
+        if (selectedId == -1) {
+            totalNotSelected += 1;
+       // else if (stringAnswerUser == correctAnswer) {
+      //} else if (correctAnswer.equals(radioButtonSelected)) {
+     // } else if (correctAnswer.contentEquals(radioButtonSelected.getText())) {
+        } else if (correctAnswer.equals(radioButtonSelected.getText().toString())) {
+            totalCorrect += 1;
         } else {
             totalWrong += 1;
         }
@@ -78,21 +115,6 @@ public class MainActivity extends AppCompatActivity {
             totalNotSelected +=1;
         } else {
             totalWrong +=1;
-        }
-    }
-
-    public void evaluateQuestion3() {
-        //casting views
-        RadioButton q3a1RadioButton = (RadioButton) findViewById(R.id.q3_a1_RadioButton);
-        RadioButton q3a2RadioButton = (RadioButton) findViewById(R.id.q3_a2_RadioButton);
-        RadioButton q3a3RadioButton = (RadioButton) findViewById(R.id.q3_a3_RadioButton);
-        //check answer
-        if (q3a1RadioButton.isChecked() || q3a3RadioButton.isChecked()) {
-            totalWrong +=1;
-        } else if (q3a2RadioButton.isChecked()) {
-            totalCorrect +=1;
-        } else {
-            totalNotSelected +=1;
         }
     }
 
@@ -140,11 +162,13 @@ public class MainActivity extends AppCompatActivity {
      */
     public void comprobar(View view) {
         //recojer resultados
-            evaluateQuestion1();
-            evaluateQuestion2();
-            evaluateQuestion3();
-            evaluateQuestion4();
-            evaluateQuestion5();
+        evaluateQuestionEditText(q1AnswerCorrect , q1AnswerUserEditText);
+        evaluateQuestion2();
+        //todo: transform evaluateQuestion4() and evaluateQuestion5() into evaluateRadioButton(x,y)
+        //
+        evaluateQuestionRadioButton(q3RadioGroup, q3AnswerCorrect);
+        evaluateQuestion4();
+        evaluateQuestion5();
         //comprobar resultados
         if (totalNotSelected == 0) {
             //componer toast message

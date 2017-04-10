@@ -17,17 +17,20 @@
     <string name="question_3_answer_1">Tratado de Niza</string>
     <string name="question_3_answer_2">Tratado de Lisboa</string>
     <string name="question_3_answer_3">Tratado de Ámserdam</string>
+    <string name="question_3_answer_correct">Tratado de Lisboa</string>
     <string name="question_4_number">4</string>
     <string name="question_4_text">En el último eurobarómetro, ¿cuál fue una de las dos palabras más
         repetidas por los encuestados cuando se les preguntó por el 60 aniversario de la U.E.?</string>
     <string name="question_4_answer_1">Satisfacción</string>
     <string name="question_4_answer_2">Decepción</string>
     <string name="question_4_answer_3">Nada</string>
+    <string name="question_4_answer_correct">Nada</string>
     <string name="question_5_number">5</string>
     <string name="question_5_text">¿A qué término imita la palabra Brexit?</string>
     <string name="question_5_answer_1">BRIEXIT</string>
     <string name="question_5_answer_2">GREXIT</string>
     <string name="question_5_answer_3">DREXIT</string>
+    <string name="question_5_answer_correct">GREXIT</string>
     <string name="intro_1_text">Brexit Quiz App</string>
     <string name="intro_2_text">Comprueba cuánto sabes sobre el brexit!!</string>
     <string name="end_1_text">Resultados</string>
